@@ -1,19 +1,19 @@
-public class phone implements Device {
+public class Phone implements Device {
   
   String brand;
   Double price;
 
-public phone(String brand,Double price){
+public Phone(String brand,Double price){
   this.brand = brand;
   this.price = price;
 }
 
 public void turnOn(){
-  System.out,println("phone id ON");
+  System.out.println("phone iS ON");
 }
 
 public void turnOff(){
-  System.out.println("phone id OFF");
+  System.out.println("phone iS OFF");
 }
 
 public void displayInfo(){
