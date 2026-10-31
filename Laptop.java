@@ -11,7 +11,7 @@ public void turnOn() {
   System.out.println("Laptop is oN");
 }
 
-public void turnOFF() {
+public void turnOff() {
   System.out.println("Laptop is OFF");
 }
 
