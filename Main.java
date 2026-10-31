@@ -2,9 +2,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Phone p = new Phone("Samsung", 1500);
-        Laptop l = new Laptop("Dell", 3000);
-        Tablet t = new Tablet("Apple", 2000);
+        Phone p = new Phone("Samsung", 1500.0);
+        Laptop l = new Laptop("Dell", 3000.0);
+        Tablet t = new Tablet("Apple", 2000.0);
 
         System.out.println("Phone Information:");
         p.displayInfo();
