@@ -8,37 +8,39 @@ public class Main {
         SmartWatch s = new SmartWatch("Apple", 800.0);
         Headphones h = new Headphones("Sony", 500.0);
 
-        System.out.println("Phone Information:");
-        p.displayInfo();
-        p.turnOn();
-        p.turnOff();
+        Device[] devices = {p, l, t, s, h};
+
+        DeviceManager manager = new DeviceManager(devices);
+
+        System.out.println("ALL DEVICES INFORMATION");
+        manager.displayAllDevices();
+
+        System.out.println("TURNING ON ALL DEVICES");
+        manager.turnOnAllDevices();
 
         System.out.println("----------------");
 
-        System.out.println("Laptop Information:");
-        l.displayInfo();
-        l.turnOn();
-        l.turnOff();
+        System.out.println("SPECIAL DEVICE FUNCTIONS");
+
+        p.makeCall();
+        l.runProgram();
+        t.draw();
+        s.countSteps();
+        h.playMusic();
 
         System.out.println("----------------");
 
-        System.out.println("Tablet Information:");
-        t.displayInfo();
-        t.turnOn();
-        t.turnOff();
+        System.out.println("CHARGING ALL DEVICES");
+
+        p.charge();
+        l.charge();
+        t.charge();
+        s.charge();
+        h.charge();
 
         System.out.println("----------------");
 
-        System.out.println("SmartWatch Information:");
-        s.displayInfo();
-        s.turnOn();
-        s.turnOff();
-
-        System.out.println("----------------");
-
-        System.out.println("Headphones Information:");
-        h.displayInfo();
-        h.turnOn();
-        h.turnOff();
+        System.out.println("TURNING OFF ALL DEVICES");
+        manager.turnOffAllDevices();
     }
 }
