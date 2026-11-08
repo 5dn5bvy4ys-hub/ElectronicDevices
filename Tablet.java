@@ -1,4 +1,4 @@
-public class Tablet implements Device {
+public class Tablet implements Device, Chargeable {
 
     String brand;
     Double price;
@@ -19,5 +19,13 @@ public class Tablet implements Device {
     public void displayInfo() {
         System.out.println("Brand: " + brand);
         System.out.println("Price: " + price);
+    }
+
+    public void charge() {
+        System.out.println("Tablet is charging");
+    }
+
+    public void draw() {
+        System.out.println("Tablet is drawing");
     }
 }
