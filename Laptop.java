@@ -1,23 +1,31 @@
-public class Laptop implements Device {
-  String brand;
-  Double price;
+public class Laptop implements Device, Chargeable {
 
-public Laptop(String brand,Double price) {
-  this.brand = brand;
-  this.price = price;
-}
+    String brand;
+    Double price;
 
-public void turnOn() {
-  System.out.println("Laptop is oN");
-}
+    public Laptop(String brand, Double price) {
+        this.brand = brand;
+        this.price = price;
+    }
 
-public void turnOff() {
-  System.out.println("Laptop is OFF");
-}
+    public void turnOn() {
+        System.out.println("Laptop is ON");
+    }
 
-public void displayInfo() {
-  System.out.println("Brand: "+ brand);
-   System.out.println("price: "+ price);
-  
-   }
+    public void turnOff() {
+        System.out.println("Laptop is OFF");
+    }
+
+    public void displayInfo() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Price: " + price);
+    }
+
+    public void charge() {
+        System.out.println("Laptop is charging");
+    }
+
+    public void runProgram() {
+        System.out.println("Laptop is running a program");
+    }
 }
